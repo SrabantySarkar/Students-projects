@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans MT';
+}
+
+body{
+    background-color: rgb(74, 72, 87);
+    color: aliceblue;
+    padding-top: 100px;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: rgb(34,31,31);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+/* LOGO */
+#too{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#too img{
+    height:35px;
+}
+
+
+#too h3{
+    color:white;
+}
+
+
+/* LINKS */
+.ele{
+    display:flex;
+    gap:25px;
+}
+
+.ele a{
+    text-decoration:none;
+    color:rgb(212,200,200);
+}
+
+/* MENU ICON */
+.menu-icon{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
+/* TYPO ANIMATION */
+.typing{
+    display:block;
+    width:41ch;
+    margin:0 auto;
+    overflow:hidden;
+    white-space:nowrap;
+    animation: typing 5s steps(41,end) infinite;
+    margin-bottom:40px;
+}
+
+h1{
+    color:rgb(166, 169, 180);
+}
+
+
+@keyframes typing{
+    0%{width:0;}
+    40%{width:41ch;}
+    60%{width:41ch;}
+    100%{width:0;}
+}
+
+/* CONTENT */
+.cont3{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:100px;
+    list-style:none;
+    padding:0;
+}
+
+.one,
+.two,
+.three{
+    margin:10px;
+}
+
+
+h2{
+    color: rgb(172, 127, 127);
+}
+
+
+b{
+    padding:30px;
+    padding-bottom: 50px;
+    color: rgb(172, 127, 127);
+}
+
+.paglu{
+    margin:50px;
+    text-align:center;
+}
+
+.cont2{
+    text-align:center;
+    margin:40px 0 70px;
+}
+
+button{
+    background:rgb(0, 0, 0);
+    height:30px;
+    width:70px;
+    border:2px solid rgb(104, 91, 91);
+}
+
+
+footer{
+    background-color: rgb(43, 40, 40);
+    padding:20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1024px){
+
+    body{
+        padding-top:90px;
+    }
+
+    .cont3{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .typing{
+        width:100%;
+        font-size:1.6rem;
+    }
+
+    .paglu{
+        margin:30px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    body{
+        padding-top:70px;
+    }
+
+    /* navbar */
+    .navbar{
+        padding:10px 15px;
+    }
+
+    /* hide links */
+     .ele{
+        display:none;
+        position:absolute;
+        top:60px;
+        right:10px;
+        background-color:rgb(34,31,31);
+        padding:15px;
+        border-radius:10px;
+        flex-direction:column;
+        gap:15px;
+        min-width:150px;
+    }
+
+
+    .ele.show{
+        display:flex;
+    }
+
+    /* show menu icon */
+    .menu-icon{
+        display:block;
+    }
+
+    /* course column */
+    .cont3{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .one,.two,.three{
+        margin:15px 0;
+    }
+
+    .typing{
+        width:100%;
+        font-size:1.2rem;
+        white-space:normal;
+        animation:none;
+        text-align:center;
+    }
+
+    h1{
+        font-size:1.3rem;
+    }
+}
+
+
+
+@media (max-width: 480px){
+
+    h1{
+        font-size:1.1rem;
+    }
+
+    .paglu{
+        margin:15px;
+        font-size:0.9rem;
+    }
+
+    #too img{
+        height:22px;
+    }
+
+    button{
+        width:90px;
+    }
+}

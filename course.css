@@ -1,0 +1,36 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(60, 65, 80);
+}
+
+
+#fuu{
+    text-align: center;
+    margin: 50px;
+    font-size: 2rem;
+    color:rgb(160, 147, 132);
+    font-weight: 700;
+}
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 30px;
+    margin-bottom:50px;
+}
+
+
+iframe{
+    width: 100%;
+    height: 200px;
+}

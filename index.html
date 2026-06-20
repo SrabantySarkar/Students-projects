@@ -5,121 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Course</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+    }
+</script>
+
 <body>
+
     <header>
 
-        <nav>
-            <center><img
-                    src="https://thumbs.dreamstime.com/b/web-development-vector-icon-symbol-creative-sign-seo-icons-collection-filled-flat-illustration-computer-mobile-logo-155906362.jpg"
-                    height="68"></img></center>
-            &nbsp;&nbsp;&nbsp;
-            <a href="index.html">Home</a>
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;
-            <a href="coursee.html">Course</a>
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            &nbsp;
-            <a href="contactt.html">Contact us</a>
-            <!-- <hr> -->
+        <nav class="navbar">
+
+            <div id="too">
+                <img src="https://cdn.creativefabrica.com/2022/10/08/Web-Development-icon-Graphics-40763454-1.jpg"
+                    alt="logo">
+                <h3>Web_Development</h3>
+            </div>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <div class="ele" id="menu">
+                <a href="index.html">Home</a>
+                <a href="coursee.html">Course</a>
+                <a href="contactt.html">Contact Us</a>
+            </div>
+
         </nav>
+
     </header>
-    <hr>
 
 
     <main>
 
-        <center>
-            <h3>Sign up to get all Courses ~ <button><a href="form.html">Sign up</a></button></h3>
-        </center>
+
+        <h1 class="typing">Start Your Web Development Journey Today ~</h1>
 
 
-        <!-- <table border="2">
-            <caption><em>The important topics that have been covered.</em></caption>
-            <tr>
-                <th>HTML</th>
-                <th>CSS</th>
-                <th>JavaScript</th>
-            </tr>
+        <ul class="cont3">
 
+            <li class="one"><b>HTML</b>
 
-            <tr>
-                <td>&nbsp;&nbsp;All important tags, example: hr,h1-h6&nbsp;&nbsp;</td>
-                <td>&nbsp;&nbsp;jgsnjgkndjgdng&nbsp;&nbsp;</td>
-                <td>&nbsp;&nbsp;jr493579275&nbsp;&nbsp;</td>
-            </tr>
-
-            <tr>
-                <td>&nbsp;&nbsp;All important tags, example: hr,h1-h6&nbsp;&nbsp;</td>
-                <td>&nbsp;&nbsp;jgsnjgkndjgdng&nbsp;&nbsp;</td>
-                <td>&nbsp;&nbsp;jr493579275&nbsp;&nbsp;</td>
-            </tr>
-
-
-            <tr>
-                <td>&nbsp;&nbsp;All important tags, example: hr,h1-h6&nbsp;&nbsp;</td>
-                <td>&nbsp;&nbsp;jgsnjgkndjgdng&nbsp;&nbsp;</td>
-                <td>&nbsp;&nbsp;jr493579275&nbsp;&nbsp;</td>
-            </tr>
-
-        </table>
- -->
-
-
-        <ul>
-            <li><b>HTML</b>
                 <ul>
                     <li>Headings & Paragraphs</li>
                     <li>Links & Images</li>
@@ -127,9 +59,13 @@
                     <li>Tables & Lists</li>
                     <li>Semantic Layout Tags</li>
                 </ul>
+
             </li>
 
-            <li><b>CSS</b>
+
+
+            <li class="two"><b>CSS</b>
+
                 <ul>
                     <li>Selectors (class, id, element)</li>
                     <li>Colors & Backgrounds</li>
@@ -137,9 +73,13 @@
                     <li>Flexbox & Grid Layout</li>
                     <li>Positioning (relative, absolute, fixed)</li>
                 </ul>
+
             </li>
 
-            <li><b>JavaScript</b>
+
+
+            <li class="three"><b>JavaScript</b>
+
                 <ul>
                     <li>Variables (let, const, var)</li>
                     <li>Functions</li>
@@ -147,87 +87,86 @@
                     <li>Events (click, input, submit)</li>
                     <li>Conditionals & Loops</li>
                 </ul>
+
             </li>
+
         </ul>
 
 
 
+        <div class="paglu">
+            <h2>What is Web Development?</h2>
+            <p>Web development is the process of building websites and web applications using HTML, CSS, and
+                JavaScript.
+            </p>
+        </div>
+
+
+
+
+        <div class="paglu">
+            <h2>Frontend vs Backend</h2>
+            <p>Frontend : What users see (HTML, CSS, JavaScript)</p>
+            <p>Backend : Server side logic (Node.js, Database, APIs)</p>
+        </div>
+
+
+        <div class="paglu">
+            <h2>Important Skills</h2>
+            <p>HTML for structure</p>
+            <p>CSS for design</p>
+            <p>JavaScript for interaction</p>
+        </div>
+
+
+
+        <div class="paglu">
+            <h2>Why Learn Web Development?</h2>
+            <p>It helps you build real websites, get jobs, freelance work, and start your tech career.</p>
+        </div>
+
+
+        <div class="paglu">
+            <h2>Project Ideas</h2>
+            <p>✔ Portfolio Website</p>
+            <p>✔ Calculator App</p>
+            <p>✔ To-Do List App</p>
+            <p>✔ Landing Page</p>
+        </div>
+
+
+        <div class="paglu">
+            <h2>Final Tip</h2>
+            <p>Practice daily, build projects, and keep learning step by step. Consistency is the key to become a
+                web
+                developer.</p>
+        </div>
+
+
+        <div class="cont2">
+
+            <h3>Sign up to get all Courses ~
+                <button>
+                    <a href="form.html">Sign up</a>
+                </button>
+            </h3>
+
+        </div>
+
+
+
+
     </main>
-    <hr>
+
+
+
     <footer>
         <p>
             Thank you for visiting this. Here, a basic web development course is provided, which will be very helpful
-            for learning web development.
+            for learning web development.🖤♣️
         </p>
     </footer>
-    <br>
-    <br>
-    <br>
-    <br>
 
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
 
 </body>
 
