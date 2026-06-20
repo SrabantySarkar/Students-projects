@@ -1,21 +1,22 @@
+/* RESET */
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    font-family:'Gill Sans MT';
+    box-sizing:border-box;
+    font-family:'Gill Sans MT', Arial, sans-serif;
 }
 
+/* BODY */
 body{
-    background-color: rgb(74, 72, 87);
-    color: aliceblue;
-    padding-top: 100px;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
+    background-color:rgb(74,72,87);
+    color:aliceblue;
+    padding-top:100px;
+    overflow-x:hidden;
 }
 
 /* NAVBAR */
 .navbar{
-    background-color: rgb(34,31,31);
+    background-color:rgb(34,31,31);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -38,11 +39,9 @@ body{
     height:35px;
 }
 
-
 #too h3{
     color:white;
 }
-
 
 /* LINKS */
 .ele{
@@ -63,27 +62,37 @@ body{
     cursor:pointer;
 }
 
-/* TYPO ANIMATION */
+/* =========================
+   TYPO TYPEWRITER EFFECT
+========================= */
+
 .typing{
     display:block;
-    width:41ch;
-    margin:0 auto;
+    width:fit-content;
+    max-width:90%;
+    margin:0 auto 40px;
     overflow:hidden;
     white-space:nowrap;
-    animation: typing 5s steps(41,end) infinite;
-    margin-bottom:40px;
+    color:rgb(166,169,180);
+    border-right:2px solid white;
+    animation:typing 6s steps(40,end) infinite;
+    text-align:center;
+    border-right: none;
 }
 
-h1{
-    color:rgb(166, 169, 180);
-}
-
-
+/* ANIMATION */
 @keyframes typing{
-    0%{width:0;}
-    40%{width:41ch;}
-    60%{width:41ch;}
-    100%{width:0;}
+    0%{
+        width:0;
+    }
+
+    50%{
+        width:100%;
+    }
+
+    100%{
+        width:0;
+    }
 }
 
 /* CONTENT */
@@ -93,25 +102,23 @@ h1{
     align-items:flex-start;
     gap:100px;
     list-style:none;
-    padding:0;
 }
 
-.one,
-.two,
-.three{
+.one,.two,.three{
     margin:10px;
 }
 
-
-h2{
-    color: rgb(172, 127, 127);
+h1{
+    color:rgb(166,169,180);
 }
 
+h2{
+    color:rgb(172,127,127);
+}
 
 b{
+    color:rgb(172,127,127);
     padding:30px;
-    padding-bottom: 50px;
-    color: rgb(172, 127, 127);
 }
 
 .paglu{
@@ -125,24 +132,33 @@ b{
 }
 
 button{
-    background:rgb(0, 0, 0);
+    background:black;
     height:30px;
     width:70px;
-    border:2px solid rgb(104, 91, 91);
+    border:2px solid rgb(119, 115, 115);
 }
 
+button:hover{
+    transform: scale(1.14);
+    transition: 2s;
+}
 
+h3{
+    margin-left: 100px;
+}
 footer{
-    background-color: rgb(43, 40, 40);
+    background-color:rgb(43,40,40);
     padding:20px;
-    line-height: 30px;
-    text-align: center;
+    text-align:center;
+    line-height:30px;
 }
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
 
-/* Responsive */
-
-@media (max-width: 1024px){
+/* TABLET */
+@media (max-width:1024px){
 
     body{
         padding-top:90px;
@@ -154,8 +170,7 @@ footer{
     }
 
     .typing{
-        width:100%;
-        font-size:1.6rem;
+        font-size:1.5rem;
     }
 
     .paglu{
@@ -163,44 +178,38 @@ footer{
     }
 }
 
-
-
-@media (max-width: 768px){
+/* MOBILE */
+@media (max-width:768px){
 
     body{
         padding-top:70px;
     }
 
-    /* navbar */
     .navbar{
         padding:10px 15px;
     }
 
-    /* hide links */
-     .ele{
+    .menu-icon{
+        display:block;
+    }
+
+    .ele{
         display:none;
         position:absolute;
         top:60px;
         right:10px;
         background-color:rgb(34,31,31);
+        flex-direction:column;
         padding:15px;
         border-radius:10px;
-        flex-direction:column;
         gap:15px;
         min-width:150px;
     }
-
 
     .ele.show{
         display:flex;
     }
 
-    /* show menu icon */
-    .menu-icon{
-        display:block;
-    }
-
-    /* course column */
     .cont3{
         flex-direction:column;
         align-items:center;
@@ -211,10 +220,10 @@ footer{
     }
 
     .typing{
-        width:100%;
         font-size:1.2rem;
-        white-space:normal;
-        animation:none;
+        white-space:nowrap;
+        overflow:hidden;
+        margin:0 auto;
         text-align:center;
     }
 
@@ -223,12 +232,15 @@ footer{
     }
 }
 
-
-
-@media (max-width: 480px){
+/* SMALL MOBILE */
+@media (max-width:480px){
 
     h1{
         font-size:1.1rem;
+    }
+
+    .typing{
+        font-size:1rem;
     }
 
     .paglu{
